@@ -2,8 +2,8 @@ import { Package2, PanelLeft, PlusCircle, Search } from 'lucide-react';
 import Link from 'next/link';
 
 import { GetInfiniteProjectsAPI } from '@/api-site/projects';
-import { CreateOrUpdateProduct } from '@/components/product/create-or-update-product';
-import { ListProjects } from '@/components/product/list-projects';
+import { CreateOrUpdateProduct } from '@/components/project/create-or-update-project';
+import { ListProjects } from '@/components/project/list-projects';
 import { ButtonLoadMore, SearchInput } from '@/components/ui-setting';
 import {
   Breadcrumb,

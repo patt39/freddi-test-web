@@ -19,7 +19,7 @@ import { ActionModalDialog } from '../ui-setting/shadcn';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
 import { formateDate } from '../util/formate-date';
-import { CreateOrUpdateProduct } from './create-or-update-product';
+import { CreateOrUpdateProduct } from './create-or-update-project';
 
 type Props = {
   item?: any;
