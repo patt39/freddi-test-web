@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <>
       <div className="flex min-h-screen w-full flex-col bg-muted/40">
-        <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
+        <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex dark:border-gray-800">
           <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
             <Link
               href="#"
@@ -130,7 +130,10 @@ export default function Home() {
                 </div>
               </div>
               <TabsContent value="all">
-                <Card x-chunk="dashboard-06-chunk-0">
+                <Card
+                  x-chunk="dashboard-06-chunk-0"
+                  className="dark:border-gray-800"
+                >
                   <CardHeader>
                     <CardTitle>Projects</CardTitle>
                     <CardDescription>
@@ -140,10 +143,7 @@ export default function Home() {
                   <CardContent>
                     <Table>
                       <TableHeader>
-                        <TableRow>
-                          {/* <TableHead className="hidden w-[100px] sm:table-cell">
-                          <span className="sr-only">Image</span>
-                        </TableHead> */}
+                        <TableRow className="dark:border-gray-800">
                           <TableHead>Project</TableHead>
                           <TableHead className="hidden md:table-cell">
                             Due date
@@ -155,11 +155,11 @@ export default function Home() {
                           </TableHead>
                         </TableRow>
                       </TableHeader>
-                      <TableBody>
+                      <TableBody className="dark:border-gray-800">
                         {isLoadingProjects ? (
                           <>Loading ...</>
                         ) : isErrorProjects ? (
-                          <>Error find data try again</>
+                          <>Error finding data try again</>
                         ) : Number(dataProjects?.pages[0]?.data?.total) <= 0 ? (
                           ''
                         ) : (
