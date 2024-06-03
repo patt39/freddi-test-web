@@ -40,6 +40,7 @@
     "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "cmdk": "^1.0.0",
     "eslint-config-next": "14.2.2",
     "lucide-react": "^0.376.0",
     "luxon": "^3.4.4",
